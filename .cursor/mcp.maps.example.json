@@ -1,0 +1,13 @@
+{
+  "_comment": "OPTIONAL — Google Maps Grounding Lite MCP. Copy the google-maps-grounding block into .cursor/mcp.json only after you set GOOGLE_MAPS_API_KEY in your user environment (never commit the key). Demo keys: https://developers.google.com/maps/architecture/grounding-with-maps-mcp",
+  "mcpServers": {
+    "google-maps-grounding": {
+      "url": "https://mapstools.googleapis.com/mcp",
+      "headers": {
+        "X-Goog-Api-Key": "REPLACE_WITH_ENV_OR_LOCAL_SECRET",
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream"
+      }
+    }
+  }
+}

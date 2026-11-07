@@ -1,0 +1,26 @@
+---
+description: TravelPlanner agent — preferences, rules, tools, trip isolation
+globs:
+  - agents/travel-planner/**
+  - skills/travel-agent/**
+  - skills/travel-planner/**
+alwaysApply: false
+---
+
+# TravelPlanner
+
+Before planning a trip, read:
+
+- `agents/travel-planner/TRAVEL_PREFERENCES.md`
+- `agents/travel-planner/TRAVEL_PLANNING_RULES.md`
+- `agents/travel-planner/WORKFLOW.md` (full trips)
+
+Use skill `travel-agent` as the primary methodology and `travel-planner` references for criteria/style.
+
+Use MCP **trvl** for flights/hotels/ground and **weather** for forecasts. Maps Grounding Lite only if configured.
+
+Defaults: home Bengaluru, departure BLR, budgets in INR.
+
+Never invent live prices. Never book/hold/pay without explicit user permission.
+
+Isolate each trip under `agents/travel-planner/trips/<trip-name>/`.
