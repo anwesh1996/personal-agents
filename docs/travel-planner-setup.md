@@ -32,11 +32,11 @@ Verified sample: weather summary for **Bengaluru** returned live Open-Meteo cond
 
 ## Pending manual steps
 
-1. **Reload Cursor MCP** after opening this repo so project `.cursor/mcp.json` is picked up. Confirm `trvl` and `weather` show as connected.
-2. Edit `agents/travel-planner/TRAVEL_PREFERENCES.md` (party size, diet, passions, budget placeholders).
-3. Optional: set `GOOGLE_MAPS_API_KEY` in your **user** environment (never commit it), then merge the block from `.cursor/mcp.maps.example.json` into `.cursor/mcp.json`.
-4. On a new Windows machine: run `powershell -ExecutionPolicy Bypass -File tools\install-trvl.ps1` and ensure `.cursor/mcp.json` points at `%LOCALAPPDATA%\trvl\trvl.exe`.
-5. User MCP already had `headroom` — left untouched (backed up under `~\.cursor\mcp.json.bak-travelplanner-*`).
+1. **See MCPs/skills in Customize:** open folder `e:\development\personal-agents`, then Customize → set the **scope** filter to include this workspace (or User). Project items are easy to miss if scope is User-only without the user installs below.
+2. **User-level install (this machine):** `trvl` + `weather` were also merged into `~\.cursor\mcp.json` (kept `headroom`; backups `mcp.json.bak-*`). Skills copied to `~\.cursor\skills\travel-agent` and `travel-planner`. Fully quit and reopen Cursor if they still don’t appear, then toggle them on.
+3. Edit `agents/travel-planner/TRAVEL_PREFERENCES.md` (party size, diet, passions, budget placeholders).
+4. Optional: set `GOOGLE_MAPS_API_KEY` in your **user** environment (never commit it), then merge the block from `.cursor/mcp.maps.example.json` into project and/or user `mcp.json`.
+5. On a new Windows machine: run `powershell -ExecutionPolicy Bypass -File tools\install-trvl.ps1` and point MCP `command` at `%LOCALAPPDATA%\trvl\trvl.exe`.
 
 ## How to start
 
