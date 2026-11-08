@@ -16,10 +16,14 @@ Thumbs.db
 
 # Node / Python noise
 node_modules/
+dist/
+*.tsbuildinfo
 __pycache__/
 *.pyc
 .venv/
 venv/
+apps/*/dist/
+packages/*/dist/
 
 # Eval clones and large binaries (install via scripts)
 .tmp-eval/

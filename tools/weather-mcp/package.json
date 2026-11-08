@@ -1,0 +1,9 @@
+{
+  "name": "weather-mcp-launcher",
+  "private": true,
+  "type": "module",
+  "description": "Pinned weather MCP plus a startup patch for Node 20.9.",
+  "dependencies": {
+    "@dangahagan/weather-mcp": "1.35.7"
+  }
+}

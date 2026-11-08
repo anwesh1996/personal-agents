@@ -1,0 +1,5 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+  - "agents/travel-craft"
+  - "agents/hello-agent"

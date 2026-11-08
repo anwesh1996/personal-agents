@@ -9,8 +9,8 @@
       }
     },
     "weather": {
-      "command": "npx",
-      "args": ["-y", "@dangahagan/weather-mcp@latest"],
+      "command": "node",
+      "args": ["tools/weather-mcp/start.mjs"],
       "env": {
         "WEATHER_UNITS": "metric"
       }

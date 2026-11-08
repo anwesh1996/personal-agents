@@ -18,7 +18,7 @@ Personal travel-planning agent in `personal-agents`: skills + rules + templates 
 | Server | Status | Notes |
 | --- | --- | --- |
 | **trvl** | Connected (verified on Windows) | Binary at `%LOCALAPPDATA%\trvl\trvl.exe` (v1.27.0). Tool: `travel`. Telemetry off via `TRVL_NO_TELEMETRY=1`. |
-| **weather** | Connected (verified on Windows) | `npx -y @dangahagan/weather-mcp@latest` (v1.35.7). Tools: `get_weather_summary`, `get_forecast`, `get_current_conditions`, `get_alerts`, `search_location`, `check_service_status`. Metric units. Analytics off by default. |
+| **weather** | Connected (verified on Windows) | `node tools/weather-mcp/start.mjs` (pinned `@dangahagan/weather-mcp` 1.35.7). Direct `npx` crashes on Node 20.9 loading `astronomy-engine`; the launcher adds the missing ESM package marker. Tools: `get_weather_summary`, `get_forecast`, `get_current_conditions`, `get_alerts`, `search_location`, `check_service_status`. Metric units. Analytics off by default. Run `npm install` in `tools/weather-mcp` after a fresh clone. |
 | **Google Maps Grounding Lite** | Not enabled | Needs API key. Example only: `.cursor/mcp.maps.example.json`. |
 
 Verified sample: weather summary for **Bengaluru** returned live Open-Meteo conditions via the weather MCP.
@@ -32,8 +32,8 @@ Verified sample: weather summary for **Bengaluru** returned live Open-Meteo cond
 
 ## Pending manual steps
 
-1. **See MCPs/skills in Customize:** open folder `e:\development\personal-agents`, then Customize → set the **scope** filter to include this workspace (or User). Project items are easy to miss if scope is User-only without the user installs below.
-2. **User-level install (this machine):** `trvl` + `weather` were also merged into `~\.cursor\mcp.json` (kept `headroom`; backups `mcp.json.bak-*`). Skills copied to `~\.cursor\skills\travel-agent` and `travel-planner`. Fully quit and reopen Cursor if they still don’t appear, then toggle them on.
+1. **See MCPs/skills in Customize:** open folder `e:\development\personal-agents`, then Customize → set the **scope** filter to this workspace. `trvl` and `weather` are project servers only.
+2. **User-level config:** `~\.cursor\mcp.json` keeps `headroom` only. Do not add `trvl` or `weather` there — those names are already in `.cursor/mcp.json`, and a second copy shows up as a duplicate. Skills may still live in `~\.cursor\skills\travel-agent` and `travel-planner`. Toggle the project servers on if they are off.
 3. Edit `agents/travel-planner/TRAVEL_PREFERENCES.md` (party size, diet, passions, budget placeholders).
 4. Optional: set `GOOGLE_MAPS_API_KEY` in your **user** environment (never commit it), then merge the block from `.cursor/mcp.maps.example.json` into project and/or user `mcp.json`.
 5. On a new Windows machine: run `powershell -ExecutionPolicy Bypass -File tools\install-trvl.ps1` and point MCP `command` at `%LOCALAPPDATA%\trvl\trvl.exe`.

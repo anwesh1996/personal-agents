@@ -1,0 +1,2326 @@
+{
+  "schemaVersion": "travel-craft.trip.v1",
+  "id": "sri-lanka-jan-2027",
+  "title": "Sri Lanka MASTER PLAN — 9–16 Jan 2027",
+  "destination": "Sri Lanka",
+  "status": "locked",
+  "updatedAt": "2026-11-07",
+  "startDate": "2027-01-09",
+  "endDate": "2027-01-16",
+  "homeAirport": "BLR",
+  "travellers": {
+    "adults": 3,
+    "children": 0,
+    "diet": [
+      "vegetarian"
+    ],
+    "pace": "relaxed",
+    "dailyRhythm": "early_bird",
+    "notes": "No self-drive"
+  },
+  "preferences": {
+    "selfDrive": false,
+    "transportMode": "private_ac_car_driver",
+    "stayStyle": "sleep_only",
+    "roomRequirements": "1 double/queen + 1 EXTRA bed or mattress; private bathroom; not a fixed triple bunk",
+    "nightBudgetUsd": {
+      "currency": "USD",
+      "low": 25,
+      "high": 45,
+      "status": "estimated",
+      "notes": "Max $50/night"
+    },
+    "interests": [
+      "culture",
+      "mountains",
+      "beaches",
+      "whale_watching"
+    ],
+    "currency": "INR"
+  },
+  "lockedDecisions": [
+    {
+      "id": "ld-1",
+      "choice": "No Udawalawe / elephant safari",
+      "impact": "Ella→Mirissa = direct drive"
+    },
+    {
+      "id": "ld-2",
+      "choice": "Keep Ravana Pool Club + trek",
+      "impact": "Ella = morning trek + afternoon pool"
+    },
+    {
+      "id": "ld-3",
+      "choice": "Car only",
+      "impact": "No Nanu Oya scenic train"
+    },
+    {
+      "id": "ld-4",
+      "choice": "16 Jan night flight · noon Mirissa checkout",
+      "impact": "Booked ~21:30 · leave Galle 15:00–15:30"
+    },
+    {
+      "id": "ld-5",
+      "choice": "Casino = entry minimum only",
+      "impact": "No gambling line in budget"
+    },
+    {
+      "id": "ld-6",
+      "choice": "Whales yes · safari no",
+      "impact": "Only early start: Fri 15 ~06:00"
+    },
+    {
+      "id": "ld-7",
+      "choice": "Flights booked IndiGo",
+      "impact": "Out Sat 9 10:45→12:30 · back Sat 16 ~21:30 · ₹85k / 3 RT (differs from early-morning recommendation)"
+    }
+  ],
+  "constraints": [
+    "Flights BOOKED — stays/driver still suggestion only",
+    "Car only — no scenic train",
+    "No Udawalawe / elephant safari",
+    "Vegetarian party of 3 adults",
+    "Early bird rhythm",
+    "Private AC car + driver required for full trip including late casino and whale dawn",
+    "Weather tables use typical January climate, not a Jan 2027 forecast",
+    "Confirmed flights override recommendedOptionId when flights.confirmed is set",
+    "Stay links: Agoda → MakeMyTrip → Booking.com last resort only"
+  ],
+  "summary": "8-day Sri Lanka loop: Colombo → Kandy → Nuwara Eliya → Ella (trek + Ravana Pool Club) → Mirissa (whales) → Galle → CMB ~21:30 IndiGo. Flights booked ₹85k / 3. Sleep-only stays via Agoda/MMT. Mid budget ~₹2.0–2.15L for 3 adults. Shopping: Ceylon tea/cinnamon; skip gem pitches.",
+  "flights": {
+    "need": "User booked midday Sat 9 land + Sat 16 evening return (confirmed overrides earlier early-morning need)",
+    "outbound": "IndiGo Sat 9 Jan BLR 10:45 → CMB 12:30 (BOOKED)",
+    "inbound": "IndiGo Sat 16 Jan CMB ~21:30 → BLR (BOOKED)",
+    "recommendedOptionId": "flight-best-fit",
+    "confirmed": {
+      "booked": true,
+      "differsFromRecommended": true,
+      "matchedOptionId": null,
+      "airline": "IndiGo",
+      "outbound": "IndiGo Sat 9 Jan 2027 BLR 10:45 → CMB 12:30",
+      "inbound": "IndiGo Sat 16 Jan 2027 CMB ~21:30 → BLR",
+      "outboundDepartLocal": "10:45",
+      "outboundArriveLocal": "12:30",
+      "inboundDepartLocal": "21:30",
+      "stops": 0,
+      "partyCount": 3,
+      "paidTotal": {
+        "currency": "INR",
+        "low": 85000,
+        "high": 85000,
+        "status": "verified",
+        "notes": "User-paid RT total for 3 adults"
+      },
+      "bookedAt": "2026-11-07",
+      "notes": "Custom midday nonstop RT — not UL174 early land and not Sat evening avoid option; keep options[] as research history"
+    },
+    "searchedAt": "2026-11-07T21:51:59+05:30",
+    "planningLock": {
+      "currency": "INR",
+      "low": 85000,
+      "high": 85000,
+      "status": "verified",
+      "notes": "Locked to confirmed paid total"
+    },
+    "costInr": {
+      "currency": "INR",
+      "low": 85000,
+      "high": 85000,
+      "status": "verified",
+      "notes": "Confirmed booking ₹85,000 / 3 RT"
+    },
+    "options": [
+      {
+        "id": "flight-best-fit",
+        "position": "best_fit",
+        "label": "Best fit — UL174 early land + evening return (research; NOT booked)",
+        "recommended": true,
+        "outbound": "SriLankan UL174 Sat 9: BLR 03:35 → CMB 05:05 nonstop",
+        "inbound": "IndiGo ~21:50 CMB→BLR Sat 16",
+        "stops": 0,
+        "airlines": [
+          "SriLankan",
+          "IndiGo"
+        ],
+        "pricePerPerson": {
+          "currency": "INR",
+          "low": 26900,
+          "high": 32000,
+          "status": "estimated",
+          "notes": "UL Jan RT floor ~₹26,900 pp on airline site"
+        },
+        "priceParty": {
+          "currency": "INR",
+          "low": 81000,
+          "high": 96000,
+          "status": "estimated"
+        },
+        "why": "Was advisor best fit for early-morning ask",
+        "tradeoff": "User booked midday IndiGo instead — see flights.confirmed",
+        "bookingUrl": "https://www.srilankan.com/",
+        "status": "estimated",
+        "searchedAt": "2026-11-07",
+        "notes": "Historical recommendation only"
+      },
+      {
+        "id": "flight-cheap",
+        "position": "cheap",
+        "label": "Cheap early-Sat — Fri night connection (research; NOT booked)",
+        "recommended": false,
+        "outbound": "Fri 8 IndiGo (often via MAA) → CMB Sat ~02:00",
+        "inbound": "Sat 16 IndiGo ~21:50",
+        "stops": 1,
+        "airlines": [
+          "IndiGo"
+        ],
+        "pricePerPerson": {
+          "currency": "INR",
+          "low": 23500,
+          "high": 28000,
+          "status": "estimated"
+        },
+        "priceParty": {
+          "currency": "INR",
+          "low": 70000,
+          "high": 84000,
+          "status": "estimated",
+          "notes": "Plus optional Colombo night 8 Jan ₹2.5–4k"
+        },
+        "why": "Cheapest early-Sat path during research",
+        "tradeoff": "Not selected",
+        "bookingUrl": "https://www.goindigo.in/",
+        "status": "estimated",
+        "searchedAt": "2026-11-07"
+      },
+      {
+        "id": "flight-avoid",
+        "position": "avoid",
+        "label": "Avoid — Sat evening nonstop (headline cheap)",
+        "recommended": false,
+        "outbound": "Sat 9 IndiGo 19:15→20:50 nonstop",
+        "inbound": "Sat 16 ~21:50",
+        "stops": 0,
+        "airlines": [
+          "IndiGo"
+        ],
+        "pricePerPerson": {
+          "currency": "INR",
+          "low": 25200,
+          "high": 26000,
+          "status": "estimated",
+          "notes": "trvl/Skiplagged sample ~₹25,202 pp RT as of 2026-11-07"
+        },
+        "priceParty": {
+          "currency": "INR",
+          "low": 70000,
+          "high": 78000,
+          "status": "estimated"
+        },
+        "why": "Cheapest live nonstop sample during research",
+        "tradeoff": "Evening land — user booked midday instead",
+        "bookingUrl": "https://skiplagged.com/flights/BLR/CMB/2027-01-09/2027-01-16",
+        "status": "estimated",
+        "searchedAt": "2026-11-07T21:51:59+05:30",
+        "notes": "Kept for audit trail"
+      }
+    ],
+    "searchUrls": [
+      "https://www.goindigo.in/",
+      "https://www.google.com/travel/flights?q=Flights%20to%20CMB%20from%20BLR%20on%202027-01-09%20through%202027-01-16"
+    ],
+    "notes": [
+      "flights.confirmed is source of truth for schedule and budget",
+      "options[] retained as research history; differsFromRecommended=true",
+      "Day 1 paced light for midday CMB arrival"
+    ]
+  },
+  "days": [
+    {
+      "id": "day-2027-01-09",
+      "date": "2027-01-09",
+      "title": "Arrive Colombo (midday IndiGo) + casino (entry only)",
+      "base": "Colombo",
+      "weatherNote": "29–31°C · dry season",
+      "weatherKind": "typical_climate",
+      "timeline": "IndiGo land 12:30 → hotel ~14:15–15:00 (CMB→city ~35 km / 45–75 min) → optional short temples or rest → Galle Face sunset → Green Cabin → casino (entry only)",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 4000,
+        "high": 8000,
+        "status": "estimated",
+        "notes": "Transfer + food + optional Lotus; casino entry ₹0–1k separate"
+      },
+      "activities": [
+        {
+          "id": "a-09-arrive",
+          "type": "transport",
+          "name": "Arrive CMB 12:30 (IndiGo booked)",
+          "startTime": "12:30",
+          "transportId": "tr-cmb-hotel",
+          "notes": "Immigration + bags ~45–60 min; hotel drop ~14:15–15:00"
+        },
+        {
+          "id": "a-09-gangaramaya",
+          "type": "attraction",
+          "name": "Gangaramaya / Seema Malaka / Beira (optional if energy)",
+          "optional": true,
+          "startTime": "15:30",
+          "attractionId": "attr-gangaramaya"
+        },
+        {
+          "id": "a-09-independence",
+          "type": "attraction",
+          "name": "Independence Memorial Hall & Square",
+          "attractionId": "attr-independence"
+        },
+        {
+          "id": "a-09-lotus",
+          "type": "attraction",
+          "name": "Colombo Lotus Tower",
+          "optional": true,
+          "attractionId": "attr-lotus"
+        },
+        {
+          "id": "a-09-galle-face",
+          "type": "attraction",
+          "name": "Galle Face Green sunset",
+          "attractionId": "attr-galle-face"
+        },
+        {
+          "id": "a-09-green-cabin",
+          "type": "meal",
+          "name": "Green Cabin dinner",
+          "restaurantId": "rest-green-cabin"
+        },
+        {
+          "id": "a-09-casino",
+          "type": "attraction",
+          "name": "Casino entry only (Bally’s / Bellagio)",
+          "attractionId": "attr-casino",
+          "notes": "Passport; no gambling budget"
+        }
+      ],
+      "attractionIds": [
+        "attr-gangaramaya",
+        "attr-seema-malaka",
+        "attr-independence",
+        "attr-lotus",
+        "attr-galle-face",
+        "attr-casino"
+      ],
+      "restaurantIds": [
+        "rest-green-cabin",
+        "rest-shanmugas"
+      ],
+      "fallback": "Skip all temples; hotel shower → Galle Face → dinner → casino",
+      "tips": [
+        "Travel-agent Day 1: light after midday land — no packed sightseeing",
+        "Day 1 food pick: Green Cabin (geography). Shanmugas if pure-veg and accept extra ride."
+      ]
+    },
+    {
+      "id": "day-2027-01-10",
+      "date": "2027-01-10",
+      "title": "Colombo → Kandy",
+      "base": "Kandy",
+      "weatherNote": "Warm → cooler evening",
+      "weatherKind": "typical_climate",
+      "timeline": "09:00 out → 3–3.5h → lunch → Tooth Temple first → palace if open → Bahirawakanda → lake",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 4000,
+        "high": 6000,
+        "status": "estimated",
+        "notes": "Tooth ~₹2.1k + food"
+      },
+      "activities": [
+        {
+          "id": "a-10-drive",
+          "type": "transport",
+          "name": "Colombo → Kandy",
+          "startTime": "09:00",
+          "transportId": "tr-colombo-kandy"
+        },
+        {
+          "id": "a-10-tooth",
+          "type": "attraction",
+          "name": "Temple of the Sacred Tooth Relic",
+          "attractionId": "attr-tooth"
+        },
+        {
+          "id": "a-10-palace",
+          "type": "attraction",
+          "name": "Royal Palace / museum area",
+          "optional": true,
+          "attractionId": "attr-palace"
+        },
+        {
+          "id": "a-10-bahirawakanda",
+          "type": "attraction",
+          "name": "Bahirawakanda White Buddha",
+          "attractionId": "attr-bahirawakanda"
+        },
+        {
+          "id": "a-10-lake",
+          "type": "attraction",
+          "name": "Kandy Lake",
+          "attractionId": "attr-kandy-lake"
+        },
+        {
+          "id": "a-10-saumiya",
+          "type": "meal",
+          "name": "Hotel Saumiya (prefer)",
+          "restaurantId": "rest-saumiya"
+        }
+      ],
+      "attractionIds": [
+        "attr-tooth",
+        "attr-palace",
+        "attr-bahirawakanda",
+        "attr-kandy-lake"
+      ],
+      "restaurantIds": [
+        "rest-saumiya",
+        "rest-devon"
+      ],
+      "tips": [
+        "Cover knees/shoulders; shoes off; socks for hot stone",
+        "Prefer Hotel Saumiya for pure veg; Devon OK for short-eats lunch"
+      ]
+    },
+    {
+      "id": "day-2027-01-11",
+      "date": "2027-01-11",
+      "title": "Kandy → Nuwara Eliya",
+      "base": "Nuwara Eliya",
+      "weatherNote": "Cool night — jacket",
+      "weatherKind": "typical_climate",
+      "timeline": "07:30 → Ambuluwawa optional → Hanuman Ramboda → lunch → Ramboda Falls → NE check-in",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 4000,
+        "high": 7000,
+        "status": "estimated",
+        "notes": "Food + optional Ambuluwawa"
+      },
+      "activities": [
+        {
+          "id": "a-11-drive",
+          "type": "transport",
+          "name": "Kandy → Nuwara Eliya (scenic)",
+          "startTime": "07:30",
+          "transportId": "tr-kandy-ne"
+        },
+        {
+          "id": "a-11-ambuluwawa",
+          "type": "attraction",
+          "name": "Ambuluwawa Tower",
+          "optional": true,
+          "attractionId": "attr-ambuluwawa"
+        },
+        {
+          "id": "a-11-hanuman",
+          "type": "attraction",
+          "name": "Sri Bhakta Hanuman Temple (Ramboda)",
+          "attractionId": "attr-hanuman"
+        },
+        {
+          "id": "a-11-ramboda",
+          "type": "attraction",
+          "name": "Ramboda Falls",
+          "attractionId": "attr-ramboda-falls"
+        }
+      ],
+      "attractionIds": [
+        "attr-ambuluwawa",
+        "attr-hanuman",
+        "attr-ramboda-falls"
+      ],
+      "restaurantIds": [],
+      "fallback": "Skip Ambuluwawa if heights/wind/rain",
+      "tips": [
+        "Road highly scenic"
+      ]
+    },
+    {
+      "id": "day-2027-01-12",
+      "date": "2027-01-12",
+      "title": "Nuwara Eliya",
+      "base": "Nuwara Eliya",
+      "weatherNote": "18–22°C · mist possible",
+      "weatherKind": "typical_climate",
+      "timeline": "Sita Amman → Little England / Old Post Office → Victoria Park → Gregory Lake",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 2000,
+        "high": 4000,
+        "status": "estimated"
+      },
+      "activities": [
+        {
+          "id": "a-12-sita",
+          "type": "attraction",
+          "name": "Sita Amman Temple",
+          "attractionId": "attr-sita"
+        },
+        {
+          "id": "a-12-post",
+          "type": "attraction",
+          "name": "Old Post Office / Little England",
+          "attractionId": "attr-old-post"
+        },
+        {
+          "id": "a-12-victoria",
+          "type": "attraction",
+          "name": "Victoria Park",
+          "attractionId": "attr-victoria"
+        },
+        {
+          "id": "a-12-gregory",
+          "type": "attraction",
+          "name": "Gregory Lake",
+          "attractionId": "attr-gregory"
+        }
+      ],
+      "attractionIds": [
+        "attr-sita",
+        "attr-old-post",
+        "attr-victoria",
+        "attr-gregory"
+      ],
+      "restaurantIds": [],
+      "tips": [
+        "Town rice & curry / Indian veg (no named must)"
+      ]
+    },
+    {
+      "id": "day-2027-01-13",
+      "date": "2027-01-13",
+      "title": "Nuwara Eliya → Ella · trek + Ravana Pool Club",
+      "base": "Ella",
+      "weatherNote": "Cool AM · PM shower risk — trek morning",
+      "weatherKind": "typical_climate",
+      "timeline": "07:30 leave NE → ~10:00 Nine Arch → 11:00–12:30 Little Adam’s Peak → 12:30 Matey Hut → check-in → 15:00–18:00 Ravana Pool Club",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 7000,
+        "high": 12000,
+        "status": "estimated",
+        "notes": "Food + pool ≈ ₹7–12k"
+      },
+      "activities": [
+        {
+          "id": "a-13-drive",
+          "type": "transport",
+          "name": "NE → Ella",
+          "startTime": "07:30",
+          "transportId": "tr-ne-ella"
+        },
+        {
+          "id": "a-13-nine-arch",
+          "type": "attraction",
+          "name": "Nine Arch Bridge",
+          "startTime": "10:00",
+          "attractionId": "attr-nine-arch"
+        },
+        {
+          "id": "a-13-lap",
+          "type": "attraction",
+          "name": "Little Adam’s Peak",
+          "startTime": "11:00",
+          "endTime": "12:30",
+          "attractionId": "attr-little-adams"
+        },
+        {
+          "id": "a-13-matey",
+          "type": "meal",
+          "name": "Matey Hut lunch",
+          "startTime": "12:30",
+          "endTime": "13:30",
+          "restaurantId": "rest-matey"
+        },
+        {
+          "id": "a-13-pool",
+          "type": "attraction",
+          "name": "Ravana Pool Club",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "attractionId": "attr-ravana-pool"
+        },
+        {
+          "id": "a-13-ella-rock",
+          "type": "attraction",
+          "name": "Ella Rock (optional alt)",
+          "optional": true,
+          "attractionId": "attr-ella-rock",
+          "notes": "3–4 h — only if cutting Pool Club"
+        }
+      ],
+      "attractionIds": [
+        "attr-nine-arch",
+        "attr-little-adams",
+        "attr-ravana-pool",
+        "attr-ella-rock"
+      ],
+      "restaurantIds": [
+        "rest-matey"
+      ],
+      "fallback": "Skip peak if rain; Nine Arch + early Pool Club / café",
+      "tips": [
+        "Pack grip shoes, water, rain layer",
+        "Pre-book Ravana Pool Club",
+        "If delayed leaving NE, cut Nine Arch walk short — keep trek + pool"
+      ]
+    },
+    {
+      "id": "day-2027-01-14",
+      "date": "2027-01-14",
+      "title": "Ella → Mirissa (direct)",
+      "base": "Mirissa",
+      "weatherNote": "Warm lowlands",
+      "weatherKind": "typical_climate",
+      "timeline": "08:00 Ravana Falls → 3.5–4.5 h drive → Mirissa check-in → beach → Coconut Tree Hill sunset",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 2000,
+        "high": 3000,
+        "status": "estimated"
+      },
+      "activities": [
+        {
+          "id": "a-14-ravana-falls",
+          "type": "attraction",
+          "name": "Ravana Falls",
+          "startTime": "08:00",
+          "attractionId": "attr-ravana-falls"
+        },
+        {
+          "id": "a-14-drive",
+          "type": "transport",
+          "name": "Ella → Mirissa direct",
+          "transportId": "tr-ella-mirissa"
+        },
+        {
+          "id": "a-14-beach",
+          "type": "attraction",
+          "name": "Mirissa Beach",
+          "attractionId": "attr-mirissa-beach"
+        },
+        {
+          "id": "a-14-coconut",
+          "type": "attraction",
+          "name": "Coconut Tree Hill sunset",
+          "attractionId": "attr-coconut-hill"
+        },
+        {
+          "id": "a-14-dhanas",
+          "type": "meal",
+          "name": "Dhana’s Curry Pot dinner (prefer)",
+          "restaurantId": "rest-dhanas"
+        }
+      ],
+      "attractionIds": [
+        "attr-ravana-falls",
+        "attr-mirissa-beach",
+        "attr-coconut-hill"
+      ],
+      "restaurantIds": [
+        "rest-dhanas",
+        "rest-mums"
+      ],
+      "tips": [
+        "No safari — direct drive locked"
+      ]
+    },
+    {
+      "id": "day-2027-01-15",
+      "date": "2027-01-15",
+      "title": "Whales + south beaches (Thai Pongal)",
+      "base": "Mirissa",
+      "weatherNote": "28–30°C · peak whale seas",
+      "weatherKind": "typical_climate",
+      "timeline": "05:45 harbour → boat ~06:00–10:30 → brunch → Weligama → Unawatuna → Dalawella or Jungle Beach → Mirissa",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 11000,
+        "high": 21000,
+        "status": "estimated",
+        "notes": "Whales ₹9–18k + food ₹2–3k"
+      },
+      "activities": [
+        {
+          "id": "a-15-whales",
+          "type": "attraction",
+          "name": "Mirissa whale watching",
+          "startTime": "06:00",
+          "endTime": "10:30",
+          "attractionId": "attr-whales"
+        },
+        {
+          "id": "a-15-weligama",
+          "type": "attraction",
+          "name": "Weligama Beach",
+          "attractionId": "attr-weligama"
+        },
+        {
+          "id": "a-15-unawatuna",
+          "type": "attraction",
+          "name": "Unawatuna Beach",
+          "attractionId": "attr-unawatuna"
+        },
+        {
+          "id": "a-15-dalawella",
+          "type": "attraction",
+          "name": "Dalawella / Jungle Beach",
+          "attractionId": "attr-dalawella"
+        }
+      ],
+      "attractionIds": [
+        "attr-whales",
+        "attr-weligama",
+        "attr-unawatuna",
+        "attr-dalawella"
+      ],
+      "restaurantIds": [],
+      "fallback": "Rough seas / cancel → sleep in + beach hop only",
+      "tips": [
+        "Seasickness tablet 60–90 min before",
+        "Sun hat; dry bag",
+        "Expect Pongal crowds on beaches"
+      ]
+    },
+    {
+      "id": "day-2027-01-16",
+      "date": "2027-01-16",
+      "title": "Noon checkout · Galle · IndiGo ~21:30 (booked)",
+      "base": null,
+      "weatherNote": "Warm coast",
+      "weatherKind": "typical_climate",
+      "timeline": "Checkout 12:00 → Mirissa→Galle 45–60 min → Fort until 15:00 → leave 15:00–15:30 → CMB by ~18:00 → IndiGo ~21:30",
+      "dayCostInr": {
+        "currency": "INR",
+        "low": 1500,
+        "high": 2500,
+        "status": "estimated"
+      },
+      "activities": [
+        {
+          "id": "a-16-checkout",
+          "type": "stay",
+          "name": "Checkout Mirissa by noon",
+          "endTime": "12:00"
+        },
+        {
+          "id": "a-16-drive-galle",
+          "type": "transport",
+          "name": "Mirissa → Galle (~35–40 km / 45–60 min)",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "transportId": "tr-mirissa-galle-cmb"
+        },
+        {
+          "id": "a-16-fort",
+          "type": "attraction",
+          "name": "Galle Dutch Fort",
+          "startTime": "13:00",
+          "endTime": "15:00",
+          "attractionId": "attr-galle-fort"
+        },
+        {
+          "id": "a-16-lighthouse",
+          "type": "attraction",
+          "name": "Galle Lighthouse",
+          "attractionId": "attr-galle-lighthouse"
+        },
+        {
+          "id": "a-16-airport",
+          "type": "transport",
+          "name": "Leave Galle for CMB (booked 21:30 flight)",
+          "startTime": "15:00",
+          "notes": "Leave 15:00–15:30 · ~140–155 km / 2–2.5 h · at CMB by ~18:00"
+        }
+      ],
+      "attractionIds": [
+        "attr-galle-fort",
+        "attr-galle-lighthouse"
+      ],
+      "restaurantIds": [],
+      "tips": [
+        "Galle is compact, not leisurely",
+        "Fort café veg — no fixed name; ask rice & curry / hoppers no egg",
+        "If delayed after 16:00 leaving Galle, skip Fort cafés; serious traffic → Mirissa→CMB direct"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "id": "attr-gangaramaya",
+      "name": "Gangaramaya Temple",
+      "optional": false,
+      "youtube": {
+        "id": "yt-gangaramaya",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=zuj4CJrgN9g",
+        "title": "Gangaramaya walking tour 4K",
+        "language": "en",
+        "publishedApprox": "2025-03",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-seema-malaka",
+      "name": "Seema Malaka / Beira Lake",
+      "optional": false,
+      "youtube": {
+        "id": "yt-seema",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=H7UcE3m0PFA",
+        "title": "Seemamalakaya on Beira Lake",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-independence",
+      "name": "Independence Memorial Hall & Square",
+      "youtube": {
+        "id": "yt-independence",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=WjVciGMg-yo",
+        "title": "Independence Memorial Hall guide",
+        "language": "en",
+        "publishedApprox": "2026-07",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-lotus",
+      "name": "Colombo Lotus Tower",
+      "optional": true,
+      "youtube": {
+        "id": "yt-lotus",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=pLS3SIMU3J8",
+        "title": "Inside Colombo Lotus Tower",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-galle-face",
+      "name": "Galle Face Green",
+      "youtube": {
+        "id": "yt-galle-face",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=YawYSMvx4-o",
+        "title": "24h Colombo · Galle Face sunset tips",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-casino",
+      "name": "Casino (Bally’s / Bellagio)",
+      "youtube": {
+        "id": "yt-casino",
+        "kind": "youtube",
+        "url": null,
+        "status": "unavailable",
+        "notes": "Entry/passport only — skip promo vlogs"
+      }
+    },
+    {
+      "id": "attr-tooth",
+      "name": "Temple of the Sacred Tooth Relic",
+      "youtube": {
+        "id": "yt-tooth",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=HyYBoMUagfo",
+        "title": "Temple of the Tooth visit tips",
+        "language": "en",
+        "publishedApprox": "2026-02",
+        "status": "estimated"
+      },
+      "website": {
+        "id": "web-tooth",
+        "kind": "website",
+        "url": "https://sridaladamaligawa.lk/",
+        "title": "Tooth Temple fees/FAQ",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-palace",
+      "name": "Royal Palace / museum area",
+      "optional": true,
+      "youtube": {
+        "id": "yt-palace",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=WSBRgd3v_Fw",
+        "title": "Kandy guide · palace + Tooth complex",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-bahirawakanda",
+      "name": "Bahirawakanda White Buddha",
+      "youtube": {
+        "id": "yt-bahirawakanda",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZaSxtPyb5WI",
+        "title": "Giant White Buddha Kandy",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-kandy-lake",
+      "name": "Kandy Lake",
+      "youtube": {
+        "id": "yt-kandy-lake",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=wt4wxZr4pW4",
+        "title": "Kandy Lake walk",
+        "language": "en",
+        "publishedApprox": "2025-12",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-ambuluwawa",
+      "name": "Ambuluwawa Tower",
+      "optional": true,
+      "youtube": {
+        "id": "yt-ambuluwawa",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=DutVikLvbi8",
+        "title": "Ambuluwawa climb · road / monkeys / safety",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-hanuman",
+      "name": "Sri Bhakta Hanuman Temple (Ramboda)",
+      "youtube": {
+        "id": "yt-hanuman",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ca3dpq6XMLs",
+        "title": "Ramboda Hanuman temple",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-ramboda-falls",
+      "name": "Ramboda Falls",
+      "youtube": {
+        "id": "yt-ramboda",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=Hg9V5-1Nka0",
+        "title": "Ramboda Falls + Hanuman Temple",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-sita",
+      "name": "Sita Amman Temple",
+      "youtube": {
+        "id": "yt-sita",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ft7d3eky4io",
+        "title": "Seetha Amman Temple visit",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-old-post",
+      "name": "Nuwara Eliya Old Post Office / Little England",
+      "youtube": {
+        "id": "yt-old-post",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=1Y7GPAJXxVs",
+        "title": "NE Post Office & govt bungalows",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-victoria",
+      "name": "Victoria Park",
+      "youtube": {
+        "id": "yt-victoria",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=8O4JRSmD04I",
+        "title": "Victoria Park Nuwara Eliya",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-gregory",
+      "name": "Gregory Lake",
+      "youtube": {
+        "id": "yt-gregory",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=_ZBQYY26hiA",
+        "title": "NE / Gregory Lake fees & activities",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-nine-arch",
+      "name": "Nine Arch Bridge",
+      "youtube": {
+        "id": "yt-nine-arch",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=L7Ls48utPF8",
+        "title": "Ella ultimate 2026 guide · Nine Arch",
+        "language": "en",
+        "publishedApprox": "2026",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-little-adams",
+      "name": "Little Adam’s Peak",
+      "youtube": {
+        "id": "yt-little-adams",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=L7Ls48utPF8",
+        "title": "Same Ella guide · Little Adam’s Peak",
+        "language": "en",
+        "publishedApprox": "2026",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-ravana-pool",
+      "name": "Ravana Pool Club",
+      "youtube": {
+        "id": "yt-ravana-pool",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=B7AqSmtdl0o",
+        "title": "Flying Ravana · Ravana Pool Club",
+        "language": "en",
+        "publishedApprox": "2024",
+        "status": "estimated"
+      },
+      "website": {
+        "id": "web-ravana-pool",
+        "kind": "website",
+        "url": "https://www.ravanapoolclub.com/",
+        "status": "estimated"
+      },
+      "notes": "≈ ₹4–8k for 3; book ahead"
+    },
+    {
+      "id": "attr-ella-rock",
+      "name": "Ella Rock",
+      "optional": true,
+      "youtube": {
+        "id": "yt-ella-rock",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qu4KZbEv2fQ",
+        "title": "How to hike Ella Rock independently",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-ravana-falls",
+      "name": "Ravana Falls",
+      "youtube": {
+        "id": "yt-ravana-falls",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RmFCyaDbKeU",
+        "title": "How to get to Ravana Falls",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-mirissa-beach",
+      "name": "Mirissa Beach",
+      "youtube": {
+        "id": "yt-mirissa-beach",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=HdwhZLW6mf0",
+        "title": "Mirissa first impressions · Secret Beach",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-coconut-hill",
+      "name": "Coconut Tree Hill",
+      "youtube": {
+        "id": "yt-coconut",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=WKmSG0pvr7I",
+        "title": "Coconut Tree Hill sunrise vs sunset",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-whales",
+      "name": "Mirissa whale watching",
+      "youtube": {
+        "id": "yt-whales",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=HdwhZLW6mf0",
+        "title": "Realistic Mirissa whale trip · ethics",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-weligama",
+      "name": "Weligama Beach",
+      "youtube": {
+        "id": "yt-weligama",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=O4Sq13p-Q7g",
+        "title": "Weligama / Mirissa / Ahangama surf coast",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-unawatuna",
+      "name": "Unawatuna Beach",
+      "youtube": {
+        "id": "yt-unawatuna",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=bItUulv_czs",
+        "title": "Unawatuna · Jungle Beach · Galle views",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-dalawella",
+      "name": "Dalawella / Jungle Beach",
+      "youtube": {
+        "id": "yt-dalawella",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=DE-zp-c4efQ",
+        "title": "Jungle Beach Unawatuna hidden gem",
+        "language": "en",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-galle-fort",
+      "name": "Galle Dutch Fort",
+      "youtube": {
+        "id": "yt-galle-fort",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=KZl8QFpTYQY",
+        "title": "Galle Fort 4K walking",
+        "language": "en",
+        "publishedApprox": "2026-02",
+        "status": "estimated"
+      }
+    },
+    {
+      "id": "attr-galle-lighthouse",
+      "name": "Galle Lighthouse",
+      "youtube": {
+        "id": "yt-galle-lighthouse",
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=dix5CSw_5AM",
+        "title": "Why Galle Fort is worth visiting · lighthouse",
+        "language": "en",
+        "status": "estimated"
+      }
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "rest-green-cabin",
+      "name": "Green Cabin",
+      "city": "Colombo",
+      "mealContext": "Day 1 dinner near Galle Face",
+      "vegetarianSuitability": "veg-friendly; not pure-veg — specify vegetarian clearly",
+      "preferred": true,
+      "good": [
+        "Classic local Sri Lankan",
+        "Veg-friendly rice & curry / kottu options",
+        "Convenient to Galle Face"
+      ],
+      "caution": [
+        "Mixed service/catering complaints in some TA notes",
+        "Not pure-veg"
+      ],
+      "sourceIds": [
+        "src-green-cabin"
+      ],
+      "reviewStatus": "estimated"
+    },
+    {
+      "id": "rest-shanmugas",
+      "name": "Shanmugas",
+      "city": "Colombo",
+      "mealContext": "Pure-veg alternative (Wellawatte)",
+      "vegetarianSuitability": "pure veg",
+      "preferred": false,
+      "good": [
+        "Pure veg",
+        "Strong dosa/thali",
+        "Staff often know vegan swaps"
+      ],
+      "caution": [
+        "Farther from Fort/Galle Face",
+        "Ask no dairy/ghee",
+        "Occasional service friction reports"
+      ],
+      "sourceIds": [
+        "src-shanmugas"
+      ],
+      "reviewStatus": "estimated"
+    },
+    {
+      "id": "rest-saumiya",
+      "name": "Hotel Saumiya",
+      "city": "Kandy",
+      "mealContext": "Preferred pure veg",
+      "vegetarianSuitability": "pure veg",
+      "preferred": true,
+      "good": [
+        "Pure veg",
+        "Dosa/rice & curry",
+        "Locals; cheap; friendly"
+      ],
+      "caution": [
+        "Can be chaotic/spicy",
+        "Check card bill",
+        "Busy evenings"
+      ],
+      "sourceIds": [
+        "src-saumiya"
+      ],
+      "reviewStatus": "estimated"
+    },
+    {
+      "id": "rest-devon",
+      "name": "Devon Restaurant",
+      "city": "Kandy",
+      "mealContext": "Short-eats lunch near Tooth",
+      "vegetarianSuitability": "confirm veg / no egg kottu",
+      "preferred": false,
+      "good": [
+        "Convenient near Tooth",
+        "Short eats / rice & curry",
+        "Fast lunch"
+      ],
+      "caution": [
+        "Mixed 2025–26 service notes on upstairs dining",
+        "Confirm veg / no egg kottu"
+      ],
+      "sourceIds": [
+        "src-devon"
+      ],
+      "reviewStatus": "estimated"
+    },
+    {
+      "id": "rest-matey",
+      "name": "Matey Hut",
+      "city": "Ella",
+      "mealContext": "Wed 13 lunch after trek",
+      "vegetarianSuitability": "excellent veg curry choice",
+      "preferred": true,
+      "good": [
+        "Excellent veg curry choice (pick 4)",
+        "Authentic; great value; friendly"
+      ],
+      "caution": [
+        "Queues / tiny; no-frills",
+        "Toilet often down the road",
+        "Closed Sunday (OK — visit Wed)"
+      ],
+      "sourceIds": [
+        "src-matey"
+      ],
+      "reviewStatus": "estimated"
+    },
+    {
+      "id": "rest-dhanas",
+      "name": "Dhana’s Curry Pot",
+      "city": "Mirissa",
+      "mealContext": "Preferred dinner",
+      "vegetarianSuitability": "veg/vegan-heavy buffet; ask what’s vegan",
+      "preferred": true,
+      "good": [
+        "Cheap AYCE veg/vegan-heavy buffet",
+        "Strong value"
+      ],
+      "caution": [
+        "Labelling imperfect",
+        "Some meat dishes on side — avoid them",
+        "Busy; flavours vary"
+      ],
+      "sourceIds": [
+        "src-dhanas"
+      ],
+      "reviewStatus": "estimated"
+    },
+    {
+      "id": "rest-mums",
+      "name": "Mum’s Kitchen",
+      "city": "Mirissa",
+      "mealContext": "Alt veg dinner",
+      "vegetarianSuitability": "homely veg; labeled vegan options",
+      "preferred": false,
+      "good": [
+        "Homely veg curries",
+        "Friendly",
+        "Labeled vegan options"
+      ],
+      "caution": [
+        "Occasional long waits",
+        "Older reports of wrong order / uneven quality"
+      ],
+      "sourceIds": [
+        "src-mums"
+      ],
+      "reviewStatus": "estimated"
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "stay-colombo",
+      "base": "Colombo",
+      "name": "Sleep-only Colombo (band)",
+      "neighborhood": "near Galle Face / Fort preferred",
+      "checkIn": "2027-01-09",
+      "checkOut": "2027-01-10",
+      "nights": 1,
+      "priceTargetUsd": {
+        "currency": "USD",
+        "low": 30,
+        "high": 45,
+        "status": "estimated"
+      },
+      "approxPriceInr": {
+        "currency": "INR",
+        "low": 2500,
+        "high": 4000,
+        "status": "estimated",
+        "notes": "~$30–45/night ×1 for party room; confirm taxes"
+      },
+      "roomRequirements": "double + extra bed",
+      "bookingSearchUrl": "https://www.agoda.com/search?city=Colombo&checkIn=2027-01-09&checkOut=2027-01-10&rooms=1&adults=3&currencyCode=INR",
+      "bookingStatus": "unverified",
+      "recommended": true,
+      "candidates": [
+        {
+          "id": "colombo-best",
+          "position": "best_fit",
+          "name": "Sleep-only near Galle Face / Fort",
+          "approxPerNight": {
+            "currency": "INR",
+            "low": 2800,
+            "high": 4000,
+            "status": "estimated"
+          },
+          "approxStayTotal": {
+            "currency": "INR",
+            "low": 2800,
+            "high": 4000,
+            "status": "estimated"
+          },
+          "why": "Close to evening casino + Green Cabin loop",
+          "tradeoff": "City noise",
+          "status": "estimated"
+        },
+        {
+          "id": "colombo-cheap",
+          "position": "cheap",
+          "name": "Budget sleep-only further from Fort",
+          "approxPerNight": {
+            "currency": "INR",
+            "low": 2200,
+            "high": 3000,
+            "status": "estimated"
+          },
+          "approxStayTotal": {
+            "currency": "INR",
+            "low": 2200,
+            "high": 3000,
+            "status": "estimated"
+          },
+          "why": "Lower nightly",
+          "tradeoff": "Longer tuk-tuk to Galle Face",
+          "status": "estimated"
+        }
+      ],
+      "notes": "Agoda primary · MMT secondary (https://www.makemytrip.com/hotels/). Midday land: request luggage drop / afternoon check-in ~14:00. Confirm double + extra bed. Search URL ≠ confirmation."
+    },
+    {
+      "id": "stay-kandy",
+      "base": "Kandy",
+      "name": "Sleep-only Kandy (band)",
+      "neighborhood": "near lake / Tooth access",
+      "checkIn": "2027-01-10",
+      "checkOut": "2027-01-11",
+      "nights": 1,
+      "priceTargetUsd": {
+        "currency": "USD",
+        "low": 25,
+        "high": 40,
+        "status": "estimated"
+      },
+      "approxPriceInr": {
+        "currency": "INR",
+        "low": 2200,
+        "high": 3500,
+        "status": "estimated"
+      },
+      "roomRequirements": "double + extra bed",
+      "bookingSearchUrl": "https://www.agoda.com/search?city=Kandy&checkIn=2027-01-10&checkOut=2027-01-11&rooms=1&adults=3&currencyCode=INR",
+      "bookingStatus": "unverified",
+      "recommended": true,
+      "candidates": [],
+      "notes": "Agoda primary · MMT secondary. Prefer walkable to Tooth or short tuk-tuk. Confirm double + extra bed."
+    },
+    {
+      "id": "stay-ne",
+      "base": "Nuwara Eliya",
+      "name": "Sleep-only Nuwara Eliya lodge (band)",
+      "neighborhood": "town / lake area",
+      "checkIn": "2027-01-11",
+      "checkOut": "2027-01-13",
+      "nights": 2,
+      "priceTargetUsd": {
+        "currency": "USD",
+        "low": 30,
+        "high": 45,
+        "status": "estimated"
+      },
+      "approxPriceInr": {
+        "currency": "INR",
+        "low": 5000,
+        "high": 7500,
+        "status": "estimated",
+        "notes": "2 nights at ~₹2.5–3.8k/night"
+      },
+      "roomRequirements": "double + extra bed; cool nights — heater/blankets",
+      "bookingSearchUrl": "https://www.agoda.com/search?city=Nuwara%20Eliya&checkIn=2027-01-11&checkOut=2027-01-13&rooms=1&adults=3&currencyCode=INR",
+      "bookingStatus": "unverified",
+      "recommended": true,
+      "candidates": [],
+      "notes": "Agoda primary · MMT secondary. Cool nights — blankets. No Grand Hotel overnight for sleep-only brief."
+    },
+    {
+      "id": "stay-ella",
+      "base": "Ella",
+      "name": "Sleep-only Ella (band)",
+      "neighborhood": "town centre / Nine Arch access",
+      "checkIn": "2027-01-13",
+      "checkOut": "2027-01-14",
+      "nights": 1,
+      "priceTargetUsd": {
+        "currency": "USD",
+        "low": 30,
+        "high": 45,
+        "status": "estimated"
+      },
+      "approxPriceInr": {
+        "currency": "INR",
+        "low": 2500,
+        "high": 4000,
+        "status": "estimated"
+      },
+      "roomRequirements": "double + extra bed",
+      "bookingSearchUrl": "https://www.agoda.com/search?city=Ella&checkIn=2027-01-13&checkOut=2027-01-14&rooms=1&adults=3&currencyCode=INR",
+      "bookingStatus": "unverified",
+      "recommended": true,
+      "candidates": [],
+      "notes": "Agoda primary · MMT secondary. Freshen before Ravana Pool Club 15:00. Confirm double + extra bed."
+    },
+    {
+      "id": "stay-mirissa",
+      "base": "Mirissa",
+      "name": "Sleep-only Mirissa harbour-side (band)",
+      "neighborhood": "harbour-side preferred for whales",
+      "checkIn": "2027-01-14",
+      "checkOut": "2027-01-16",
+      "nights": 2,
+      "priceTargetUsd": {
+        "currency": "USD",
+        "low": 30,
+        "high": 45,
+        "status": "estimated"
+      },
+      "approxPriceInr": {
+        "currency": "INR",
+        "low": 5000,
+        "high": 7500,
+        "status": "estimated",
+        "notes": "2 nights"
+      },
+      "roomRequirements": "double + extra bed; harbour-side helpful for whales",
+      "bookingSearchUrl": "https://www.agoda.com/search?city=Mirissa&checkIn=2027-01-14&checkOut=2027-01-16&rooms=1&adults=3&currencyCode=INR",
+      "bookingStatus": "unverified",
+      "recommended": true,
+      "candidates": [
+        {
+          "id": "mirissa-best",
+          "position": "best_fit",
+          "name": "Harbour-side sleep-only",
+          "approxPerNight": {
+            "currency": "INR",
+            "low": 2800,
+            "high": 4000,
+            "status": "estimated"
+          },
+          "approxStayTotal": {
+            "currency": "INR",
+            "low": 5600,
+            "high": 8000,
+            "status": "estimated"
+          },
+          "why": "Short pre-dawn walk/tuk to whale boats",
+          "tradeoff": "May book earlier in peak whale season",
+          "status": "estimated"
+        },
+        {
+          "id": "mirissa-cheap",
+          "position": "cheap",
+          "name": "Inland / beach-road budget",
+          "approxPerNight": {
+            "currency": "INR",
+            "low": 2200,
+            "high": 3200,
+            "status": "estimated"
+          },
+          "approxStayTotal": {
+            "currency": "INR",
+            "low": 4400,
+            "high": 6400,
+            "status": "estimated"
+          },
+          "why": "Lower nightly",
+          "tradeoff": "Earlier wake for harbour transfer",
+          "status": "estimated"
+        }
+      ],
+      "notes": "Agoda primary · MMT secondary. Harbour-side preferred for whales; noon checkout 16 Jan. Confirm double + extra bed."
+    }
+  ],
+  "transport": [
+    {
+      "id": "tr-cmb-hotel",
+      "origin": "CMB",
+      "destination": "Colombo hotel",
+      "mode": "private_car",
+      "durationHours": {
+        "currency": "HOURS",
+        "low": 0.75,
+        "high": 1.5,
+        "status": "estimated"
+      },
+      "scenic": "Low",
+      "driverRequired": true,
+      "status": "estimated"
+    },
+    {
+      "id": "tr-colombo-kandy",
+      "origin": "Colombo",
+      "destination": "Kandy",
+      "mode": "private_car",
+      "durationHours": {
+        "currency": "HOURS",
+        "low": 3,
+        "high": 3.5,
+        "status": "estimated"
+      },
+      "scenic": "Mixed",
+      "driverRequired": true,
+      "status": "estimated"
+    },
+    {
+      "id": "tr-kandy-ne",
+      "origin": "Kandy",
+      "destination": "Nuwara Eliya",
+      "mode": "private_car",
+      "durationHours": {
+        "currency": "HOURS",
+        "low": 3.5,
+        "high": 4.5,
+        "status": "estimated",
+        "notes": "With stops"
+      },
+      "scenic": "High",
+      "driverRequired": true,
+      "status": "estimated"
+    },
+    {
+      "id": "tr-ne-ella",
+      "origin": "Nuwara Eliya",
+      "destination": "Ella",
+      "mode": "private_car",
+      "durationHours": {
+        "currency": "HOURS",
+        "low": 2,
+        "high": 2.5,
+        "status": "estimated"
+      },
+      "scenic": "High",
+      "driverRequired": true,
+      "notes": "Car only — no scenic train",
+      "status": "estimated"
+    },
+    {
+      "id": "tr-ella-mirissa",
+      "origin": "Ella",
+      "destination": "Mirissa",
+      "mode": "private_car",
+      "durationHours": {
+        "currency": "HOURS",
+        "low": 3.5,
+        "high": 4.5,
+        "status": "estimated"
+      },
+      "scenic": "Medium",
+      "driverRequired": true,
+      "notes": "Direct — no Udawalawe safari",
+      "status": "estimated"
+    },
+    {
+      "id": "tr-mirissa-galle-cmb",
+      "origin": "Mirissa",
+      "destination": "CMB via Galle",
+      "mode": "private_car",
+      "durationHours": {
+        "currency": "HOURS",
+        "low": 3,
+        "high": 4,
+        "status": "estimated"
+      },
+      "scenic": "Expressway low",
+      "driverRequired": true,
+      "notes": "Noon checkout; leave Galle 15:00–15:30 for booked 21:30 flight",
+      "status": "estimated"
+    }
+  ],
+  "budget": {
+    "currency": "INR",
+    "partySize": 3,
+    "lines": [
+      {
+        "id": "bud-flights",
+        "label": "Flights RT (BOOKED)",
+        "amount": {
+          "currency": "INR",
+          "low": 85000,
+          "high": 85000,
+          "status": "verified",
+          "notes": "IndiGo Sat 9 10:45→12:30 + Sat 16 ~21:30 · 3 adults"
+        }
+      },
+      {
+        "id": "bud-driver",
+        "label": "Driver ~7 days",
+        "amount": {
+          "currency": "INR",
+          "low": 40000,
+          "high": 55000,
+          "status": "estimated"
+        }
+      },
+      {
+        "id": "bud-stay",
+        "label": "Sleep-only 7N (approx hotels)",
+        "amount": {
+          "currency": "INR",
+          "low": 17200,
+          "high": 26500,
+          "status": "estimated",
+          "notes": "Sum of base approx bands"
+        }
+      },
+      {
+        "id": "bud-food",
+        "label": "Food",
+        "amount": {
+          "currency": "INR",
+          "low": 16000,
+          "high": 22000,
+          "status": "estimated"
+        }
+      },
+      {
+        "id": "bud-whales",
+        "label": "Whale watching",
+        "amount": {
+          "currency": "INR",
+          "low": 9000,
+          "high": 18000,
+          "status": "estimated"
+        }
+      },
+      {
+        "id": "bud-tickets",
+        "label": "Tickets",
+        "amount": {
+          "currency": "INR",
+          "low": 5000,
+          "high": 10000,
+          "status": "estimated"
+        }
+      },
+      {
+        "id": "bud-pool",
+        "label": "Ravana Pool Club",
+        "amount": {
+          "currency": "INR",
+          "low": 4000,
+          "high": 8000,
+          "status": "estimated"
+        }
+      },
+      {
+        "id": "bud-casino",
+        "label": "Casino entry",
+        "amount": {
+          "currency": "INR",
+          "low": 0,
+          "high": 1000,
+          "status": "estimated"
+        }
+      },
+      {
+        "id": "bud-buffer",
+        "label": "Buffer",
+        "amount": {
+          "currency": "INR",
+          "low": 8000,
+          "high": 12000,
+          "status": "estimated"
+        }
+      }
+    ],
+    "totalLow": 181000,
+    "totalHigh": 241000,
+    "midLow": 200000,
+    "midHigh": 215000,
+    "notes": "Flights locked at ₹85k verified; MASTER-PLAN mid ~₹2.0–2.15L.",
+    "status": "estimated"
+  },
+  "sources": [
+    {
+      "id": "src-yt-gangaramaya",
+      "label": "Gangaramaya Temple YouTube",
+      "url": "https://www.youtube.com/watch?v=zuj4CJrgN9g",
+      "kind": "youtube",
+      "supports": [
+        "attr-gangaramaya"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-seema",
+      "label": "Seema Malaka YouTube",
+      "url": "https://www.youtube.com/watch?v=H7UcE3m0PFA",
+      "kind": "youtube",
+      "supports": [
+        "attr-seema-malaka"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-independence",
+      "label": "Independence Memorial Hall YouTube",
+      "url": "https://www.youtube.com/watch?v=WjVciGMg-yo",
+      "kind": "youtube",
+      "supports": [
+        "attr-independence"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-lotus",
+      "label": "Lotus Tower YouTube",
+      "url": "https://www.youtube.com/watch?v=pLS3SIMU3J8",
+      "kind": "youtube",
+      "supports": [
+        "attr-lotus"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-galle-face",
+      "label": "Galle Face Green YouTube",
+      "url": "https://www.youtube.com/watch?v=YawYSMvx4-o",
+      "kind": "youtube",
+      "supports": [
+        "attr-galle-face"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-tooth",
+      "label": "Temple of the Tooth YouTube",
+      "url": "https://www.youtube.com/watch?v=HyYBoMUagfo",
+      "kind": "youtube",
+      "supports": [
+        "attr-tooth"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-palace",
+      "label": "Kandy palace / Tooth complex YouTube",
+      "url": "https://www.youtube.com/watch?v=WSBRgd3v_Fw",
+      "kind": "youtube",
+      "supports": [
+        "attr-palace"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-bahirawakanda",
+      "label": "Bahirawakanda YouTube",
+      "url": "https://www.youtube.com/watch?v=ZaSxtPyb5WI",
+      "kind": "youtube",
+      "supports": [
+        "attr-bahirawakanda"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-kandy-lake",
+      "label": "Kandy Lake YouTube",
+      "url": "https://www.youtube.com/watch?v=wt4wxZr4pW4",
+      "kind": "youtube",
+      "supports": [
+        "attr-kandy-lake"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-ambuluwawa",
+      "label": "Ambuluwawa climb YouTube",
+      "url": "https://www.youtube.com/watch?v=DutVikLvbi8",
+      "kind": "youtube",
+      "supports": [
+        "attr-ambuluwawa"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-hanuman",
+      "label": "Hanuman Temple Ramboda YouTube",
+      "url": "https://www.youtube.com/watch?v=ca3dpq6XMLs",
+      "kind": "youtube",
+      "supports": [
+        "attr-hanuman"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-ramboda",
+      "label": "Ramboda Falls YouTube",
+      "url": "https://www.youtube.com/watch?v=Hg9V5-1Nka0",
+      "kind": "youtube",
+      "supports": [
+        "attr-ramboda-falls"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-sita",
+      "label": "Sita Amman Temple YouTube",
+      "url": "https://www.youtube.com/watch?v=Ft7d3eky4io",
+      "kind": "youtube",
+      "supports": [
+        "attr-sita"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-old-post",
+      "label": "NE Old Post Office YouTube",
+      "url": "https://www.youtube.com/watch?v=1Y7GPAJXxVs",
+      "kind": "youtube",
+      "supports": [
+        "attr-old-post"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-victoria",
+      "label": "Victoria Park YouTube",
+      "url": "https://www.youtube.com/watch?v=8O4JRSmD04I",
+      "kind": "youtube",
+      "supports": [
+        "attr-victoria"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-gregory",
+      "label": "Gregory Lake YouTube",
+      "url": "https://www.youtube.com/watch?v=_ZBQYY26hiA",
+      "kind": "youtube",
+      "supports": [
+        "attr-gregory"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-ella",
+      "label": "Nine Arch + Little Adam’s Peak YouTube",
+      "url": "https://www.youtube.com/watch?v=L7Ls48utPF8",
+      "kind": "youtube",
+      "supports": [
+        "attr-nine-arch",
+        "attr-little-adams"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-ravana-pool",
+      "label": "Ravana Pool Club YouTube",
+      "url": "https://www.youtube.com/watch?v=B7AqSmtdl0o",
+      "kind": "youtube",
+      "supports": [
+        "attr-ravana-pool"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-ella-rock",
+      "label": "Ella Rock YouTube",
+      "url": "https://www.youtube.com/watch?v=qu4KZbEv2fQ",
+      "kind": "youtube",
+      "supports": [
+        "attr-ella-rock"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-ravana-falls",
+      "label": "Ravana Falls YouTube",
+      "url": "https://www.youtube.com/watch?v=RmFCyaDbKeU",
+      "kind": "youtube",
+      "supports": [
+        "attr-ravana-falls"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-mirissa",
+      "label": "Mirissa Beach / whales YouTube",
+      "url": "https://www.youtube.com/watch?v=HdwhZLW6mf0",
+      "kind": "youtube",
+      "supports": [
+        "attr-mirissa-beach",
+        "attr-whales"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-coconut",
+      "label": "Coconut Tree Hill YouTube",
+      "url": "https://www.youtube.com/watch?v=WKmSG0pvr7I",
+      "kind": "youtube",
+      "supports": [
+        "attr-coconut-hill"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-weligama",
+      "label": "Weligama surf coast YouTube",
+      "url": "https://www.youtube.com/watch?v=O4Sq13p-Q7g",
+      "kind": "youtube",
+      "supports": [
+        "attr-weligama"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-unawatuna",
+      "label": "Unawatuna YouTube",
+      "url": "https://www.youtube.com/watch?v=bItUulv_czs",
+      "kind": "youtube",
+      "supports": [
+        "attr-unawatuna"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-dalawella",
+      "label": "Jungle Beach YouTube",
+      "url": "https://www.youtube.com/watch?v=DE-zp-c4efQ",
+      "kind": "youtube",
+      "supports": [
+        "attr-dalawella"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-galle-fort",
+      "label": "Galle Fort YouTube",
+      "url": "https://www.youtube.com/watch?v=KZl8QFpTYQY",
+      "kind": "youtube",
+      "supports": [
+        "attr-galle-fort"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-yt-galle-lighthouse",
+      "label": "Galle Lighthouse YouTube",
+      "url": "https://www.youtube.com/watch?v=dix5CSw_5AM",
+      "kind": "youtube",
+      "supports": [
+        "attr-galle-lighthouse"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "prefer-latest re-enrichment"
+    },
+    {
+      "id": "src-matey",
+      "label": "Matey Hut HappyCow",
+      "url": "https://www.happycow.net/reviews/matey-hut-ella-151807",
+      "kind": "review",
+      "supports": [
+        "rest-matey"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "Also TripAdvisor Matey Hut Ella"
+    },
+    {
+      "id": "src-devon",
+      "label": "Devon / Captain’s Table reviews",
+      "url": null,
+      "kind": "review",
+      "supports": [
+        "rest-devon"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "HappyCow Devon · TripAdvisor Captain’s Table By Devon — exact URL not supplied"
+    },
+    {
+      "id": "src-saumiya",
+      "label": "Hotel Saumiya HappyCow",
+      "url": "https://www.happycow.net/reviews/hotel-saumiya-kandy-334330",
+      "kind": "review",
+      "supports": [
+        "rest-saumiya"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-green-cabin",
+      "label": "Green Cabin TripAdvisor",
+      "url": null,
+      "kind": "review",
+      "supports": [
+        "rest-green-cabin"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "TripAdvisor Green Cabin Kollupitiya — exact URL not supplied"
+    },
+    {
+      "id": "src-shanmugas",
+      "label": "Shanmugas HappyCow",
+      "url": "https://www.happycow.net/reviews/shanmugas-colombo-10691",
+      "kind": "review",
+      "supports": [
+        "rest-shanmugas"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-dhanas",
+      "label": "Dhana’s Curry Pot HappyCow",
+      "url": "https://www.happycow.net/reviews/dhanas-curry-pot-mirissa-151226",
+      "kind": "review",
+      "supports": [
+        "rest-dhanas"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-mums",
+      "label": "Mum’s Kitchen reviews",
+      "url": null,
+      "kind": "review",
+      "supports": [
+        "rest-mums"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "HappyCow · TripAdvisor Mum’s Kitchen Mirissa — exact URL not supplied"
+    },
+    {
+      "id": "src-eta",
+      "label": "Sri Lanka ETA",
+      "url": "https://eta.gov.lk/slvisa/",
+      "kind": "official",
+      "supports": [
+        "prep"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-ravana-pool",
+      "label": "Ravana Pool Club official",
+      "url": "https://www.ravanapoolclub.com/",
+      "kind": "official",
+      "supports": [
+        "attr-ravana-pool"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-tooth-official",
+      "label": "Tooth Temple official",
+      "url": "https://sridaladamaligawa.lk/",
+      "kind": "official",
+      "supports": [
+        "attr-tooth"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-whale-guides",
+      "label": "Whale season / ethics guides",
+      "url": null,
+      "kind": "research",
+      "supports": [
+        "attr-whales"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "Sri Lanka Spirit / Crooked Compass guides (2025–2026)"
+    },
+    {
+      "id": "src-climate",
+      "label": "January climate",
+      "url": null,
+      "kind": "research",
+      "supports": [
+        "weather"
+      ],
+      "checkedAt": "2026-11-07",
+      "notes": "WMO normals / destination January guides — typical climate, not Jan 2027 forecast"
+    },
+    {
+      "id": "src-shop-connectlanka",
+      "label": "Shopping what to buy / gem caution",
+      "url": "https://connectlanka.com/travel-guide/shopping-in-sri-lanka/",
+      "kind": "research",
+      "supports": [
+        "shopping"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-shop-cinnamon",
+      "label": "Ceylon cinnamon vs cassia / spice gardens",
+      "url": "https://roamingceylon.com/guides/spices-and-gems-in-sri-lanka",
+      "kind": "research",
+      "supports": [
+        "shopping"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-shop-smc",
+      "label": "Things to buy + India ₹75k allowance notes",
+      "url": "https://www.smcinsurance.com/travel-insurance/articles/things-to-buy-in-sri-lanka",
+      "kind": "research",
+      "supports": [
+        "shopping"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-customs-sl-tea",
+      "label": "CMB departure baggage — tea allowance",
+      "url": "https://www.airport.lk/passenger_guide/departure_info/baggage.php",
+      "kind": "official",
+      "supports": [
+        "shopping"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-customs-in-2026",
+      "label": "India Baggage Rules 2026 Notification 14",
+      "url": "https://www.indiabudget.gov.in/doc/cen/cus1426.pdf",
+      "kind": "official",
+      "supports": [
+        "shopping"
+      ],
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "src-ngja",
+      "label": "NGJA gem testing",
+      "url": "https://ngja.gov.lk/business_services/gem-testing-and-valuation/",
+      "kind": "official",
+      "supports": [
+        "shopping"
+      ],
+      "checkedAt": "2026-11-07"
+    }
+  ],
+  "prepChecklist": [
+    "Flights: morning 9 Jan + evening ≥20:30 on 16 Jan",
+    "ETA ×3 — https://eta.gov.lk/slvisa/",
+    "5 lodges: double + extra bed in writing",
+    "Driver quote: late casino, pre-dawn whales, noon Mirissa→Galle→CMB",
+    "Whale boat 15 Jan",
+    "Ravana Pool Club reservation 13 Jan PM",
+    "Trek shoes + rain layer · seasickness tablets · temple clothes · NE jacket"
+  ],
+  "provenance": {
+    "status": "estimated",
+    "sourceLabel": "MASTER-PLAN.md + sources.md (Agoda/MMT + shopping re-sync)",
+    "verifiedAt": "2026-11-07",
+    "notes": "Flights verified booked; stays/shopping estimated; Booking.com removed from stay search URLs"
+  },
+  "userModifications": null,
+  "shopping": {
+    "from": "Bengaluru / India",
+    "to": "Sri Lanka (Colombo · hills · south coast)",
+    "buys": [
+      {
+        "id": "buy-ceylon-tea",
+        "item": "Ceylon tea (sealed; Lion Logo if possible)",
+        "category": "food_spice",
+        "reason": "better_quality",
+        "why": "Origin-packed grades/estates rarely stocked the same way in Bengaluru",
+        "where": "Estate shops (NE/Kandy), Ceylon Tea Museum area, Dilmah/Mlesna town stores",
+        "approxPrice": {
+          "currency": "INR",
+          "low": 800,
+          "high": 3000,
+          "status": "estimated"
+        },
+        "notes": "Factory-sealed; Lion Logo = packed-in-SL guarantee",
+        "status": "estimated"
+      },
+      {
+        "id": "buy-cinnamon",
+        "item": "True Ceylon cinnamon (thin quills)",
+        "category": "food_spice",
+        "reason": "better_quality",
+        "why": "Soft flaky C. verum vs thick cassia often sold as cinnamon in India",
+        "where": "Town spice shops / Kandy–Matale; compare supermarket vs garden stall",
+        "approxPrice": {
+          "currency": "INR",
+          "low": 500,
+          "high": 2000,
+          "status": "estimated"
+        },
+        "notes": "Thin multi-layer quills; thick hard bark = cassia",
+        "status": "estimated"
+      },
+      {
+        "id": "buy-spices",
+        "item": "Pepper / cardamom / cloves (sealed packs)",
+        "category": "food_spice",
+        "reason": "specialty",
+        "why": "Fresh local spice-route specialty; good kitchen gifts",
+        "where": "Markets + sealed supermarket packs (baseline before garden upsell)",
+        "approxPrice": {
+          "currency": "INR",
+          "low": 300,
+          "high": 1500,
+          "status": "estimated"
+        },
+        "status": "estimated"
+      },
+      {
+        "id": "buy-batik",
+        "item": "Hand-drawn batik / handloom",
+        "category": "craft",
+        "reason": "not_available_at_origin",
+        "why": "Destination craft with different supply than typical BLR tourist stock",
+        "where": "Laksala (price baseline) · Selyn-style handloom · Galle Fort named shops",
+        "notes": "Pattern irregularities = hand-drawn; machine print is the fake",
+        "status": "estimated"
+      },
+      {
+        "id": "buy-craft-small",
+        "item": "Wood mask / lacquer / brass (small)",
+        "category": "craft",
+        "reason": "specialty",
+        "why": "Local craft not commonly priced the same at home",
+        "where": "Ambalangoda masks · Kandy brass/lacquer · Laksala",
+        "notes": "Modern craft only; antiques 50+ yrs need export licence",
+        "status": "estimated"
+      }
+    ],
+    "skips": [
+      {
+        "id": "skip-gems",
+        "item": "Gem investment / driver-led gem shops",
+        "why": "Highest-loss tourist scam (driver/stranger gem shops). Buy only if YOU chose an NGJA-licensed dealer + physical lab cert + export clearance — never for resale/investment.",
+        "status": "estimated"
+      },
+      {
+        "id": "skip-electronics",
+        "item": "Electronics / branded cosmetics",
+        "why": "Same or costlier than India",
+        "status": "estimated"
+      },
+      {
+        "id": "skip-ayurveda",
+        "item": "Unlabeled Ayurvedic miracle packs",
+        "why": "Quality + customs risk",
+        "status": "estimated"
+      },
+      {
+        "id": "skip-airport-tea",
+        "item": "Airport tea walls / hotel gift markup",
+        "why": "Same brands cheaper in town/estate shops",
+        "status": "estimated"
+      },
+      {
+        "id": "skip-fake-batik",
+        "item": "Machine-print batik & unmarked loose spices",
+        "why": "Fake quality; harder at India arrival",
+        "status": "estimated"
+      }
+    ],
+    "notes": "Personal-use sealed packs. SL departure: airport.lk lists up to 10 kg Sri Lanka tea duty-free (verify on day). India return: Baggage Rules 2026 general free allowance ₹75,000 for residents (Notification No. 14/2026) — verify before travel. Avoid fresh/raw plant products. Gems need NGJA paperwork if bought. Declare if unsure (Red Channel). Stay links: Agoda → MMT → Booking last resort."
+  }
+}

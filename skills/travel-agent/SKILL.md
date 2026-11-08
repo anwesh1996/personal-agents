@@ -1,6 +1,18 @@
 ---
 name: travel-agent
-description: World-class travel planning agent. Use whenever the user wants to plan, design, brainstorm, or sanity-check a trip - including phrases like "plan a trip", "plan a vacation", "plan a getaway", "plan a holiday", "plan our honeymoon", "anniversary trip", "birthday trip", "bachelor trip", "bachelorette trip", "summer trip", "winter trip", "weekend in", "long weekend", "weekend getaway", "bucket list trip", "dream trip", "where should we go", "help me figure out where to go", "build me an itinerary", "itinerary for", "trip to [anywhere]", "thinking about going to", "we want to go somewhere", "I need a vacation", "take me through planning", "got X days off", or any natural travel-planning phrasing. Fire on a soft match. The skill replaces ad-hoc destination chat with a seven-phase elite-planner workflow: discovery, destination shaping, logistics scaffold, day-by-day itinerary, reservations tracker, packing and prep, and a polished PDF deliverable. Every recommendation is sourced via current web search (no stale recall), tradeoffs are spoken out loud, and bad ideas get pushed back on with a better alternative.
+description: >-
+  World-class travel planning agent. Use whenever the user wants to plan, design,
+  brainstorm, or sanity-check a trip, including phrases like plan a trip, plan a vacation,
+  plan a getaway, plan a holiday, plan our honeymoon, anniversary trip, birthday trip,
+  bachelor trip, bachelorette trip, weekend getaway, bucket list trip, dream trip, where
+  should we go, help me figure out where to go, build me an itinerary, itinerary for, trip
+  to anywhere, thinking about going to, we want to go somewhere, I need a vacation, or any
+  natural travel-planning phrasing. Fire on a soft match. Replaces ad-hoc destination chat
+  with a seven-phase elite-planner workflow covering discovery, destination shaping,
+  logistics scaffold, day-by-day itinerary, reservations tracker, packing and prep, and a
+  locked MASTER-PLAN deliverable (PDF optional). Every recommendation uses current web
+  search, tradeoffs are spoken out loud, and bad ideas get pushed back on with a better
+  alternative.
 ---
 
 # Travel Agent
@@ -113,23 +125,35 @@ Tailor the packing list to weather, activities, length, and destination - not a 
 
 ### Phase 7 - Deliverable
 
-Compile the full plan into a polished PDF.
+Do not finalize until the user has locked open decisions (dates shape, must-dos, pace tradeoffs, transport mode, major paid activities).
 
-**Inside N.O.V.A.**, the natural choice is the `nova-document` skill (matches `document-standards.md`).
-**Outside N.O.V.A.** or when calling from the sandbox skills environment, fall back to `pdf-report-creator`.
+**In this workspace (personal-agents / TravelPlanner):**
 
-The PDF must include:
+1. Write `agents/travel-planner/trips/<trip-name>/MASTER-PLAN.md` as the **canonical** locked deliverable (use `agents/travel-planner/templates/master-plan.md`).
+2. Include **Flights** (best/optimal, cheap, avoid/trap) and **Hotels** (approx pricing per base) via **trvl** when available — see `travel-planner` reference `flight-hotel-pricing.md`. Stay links: **Agoda → MakeMyTrip → Booking.com (last resort only)**. Never invent fares/rates; never book on the user’s behalf.
+3. Include **Things to buy (From → To)** — items not available or costly at the origin, plus a skip list — see `shopping-buys.md`.
+4. When the user **confirms a booking** (flights, hotel, etc.), update MASTER-PLAN + `trip.json` with those exact details even if they **differ from every recommended option**. In `trip.json` use `flights.confirmed` (keep `options[]` as research history); set paid totals to `verified`; re-pace Day 1 / return day for the real times.
+5. Enrich **every named stop** with one YouTube link using `travel-planner` reference `youtube-enrichment.md` (prefer the **latest** useful practical guide; **no hard 6–12 month cutoff**; any language), or `YouTube: not found`.
+6. Enrich **every named restaurant** with good + caution review takeaways using `restaurant-reviews.md` (prefer recent reviews; older OK if nothing newer), or `Reviews: not found`.
+7. Mirror the locked plan into validated Travel Craft `trip.json` when the schema is available (flights, hotels, shopping, including `confirmed` when booked).
+8. Live-search only — never invent URLs, review quotes, fares, hotel rates, or shopping deals. YouTube/reviews need no dedicated MCP; flights/hotels use trvl.
+9. Cite flights, hotels, shopping, videos, and review sources in `sources.md`.
+10. Offer a polished PDF only if the user asks. PDF generation (when requested): inside N.O.V.A. use `nova-document`; otherwise fall back to `pdf-report-creator` if available.
+
+**Outside this workspace**, if no trip folder convention exists, present the locked plan in chat with the same YouTube + restaurant-review enrichment, then offer PDF if useful.
+
+When a PDF is produced, include:
 - Cover (destination, dates, traveler count)
 - Table of contents
 - Trip overview (one page - why this trip, what it's optimizing for)
-- Day-by-day pages
+- Day-by-day pages (with YouTube + restaurant review lines)
 - Reservations tracker
 - Packing list
 - Prep checklist
 - Emergency contacts and embassy info
 - Budget summary with a buffer line (10–15% of total)
 
-Save the PDF, share the path, then offer one round of revisions.
+Share the MASTER-PLAN path (and PDF path if created), then offer one round of revisions.
 
 ## Quality Rules (every phase)
 
@@ -160,6 +184,14 @@ Save the PDF, share the path, then offer one round of revisions.
 - About to plan an anchor experience on Day 1 → **stop, that's jet-lag day**
 - About to fill every block of every day → **stop, build in rest**
 - About to recommend Sunday/Monday for a city with widespread closures → **stop, check and rebalance**
+- About to call MASTER-PLAN final without YouTube for each named stop (or `not found`) → **stop, enrich**
+- About to mark `YouTube: not found` only because the video is older than 6–12 months → **stop, use the best practical match and prefer latest when several exist**
+- About to call MASTER-PLAN final without good + caution reviews for each named restaurant (or `not found`) → **stop, enrich**
+- About to call MASTER-PLAN final without three flight positions or hotel approx pricing → **stop, search with trvl / mark unavailable**
+- About to default stay links to Booking.com without trying Agoda then MakeMyTrip → **stop, prefer Agoda/MMT; Booking only as last resort**
+- About to finalize MASTER-PLAN without a From→To things-to-buy section (or explicit “none material”) → **stop, add shopping-buys**
+- About to leave MASTER-PLAN / `trip.json` on recommended options after the user confirmed a booking → **stop, write `flights.confirmed` (or hotel verified) with exact times/paid total even if it differs from every option**
+- About to invent a YouTube URL, review quote, flight fare, hotel rate, or shopping deal → **stop, search or mark not found**
 
 ## When the User Pushes Back on Your Pushback
 
@@ -172,3 +204,4 @@ If the user insists after a pushback ("no, I really do want twelve cities in ten
 - `references/itinerary-template.md` - day structure, anchor + backup, restaurant format
 - `references/reservations-tracker-template.md` - how to track and surface advance bookings
 - `references/packing-prep-template.md` - tailored packing list and prep checklist structure
+- Sibling skill `travel-planner` references: `youtube-enrichment.md`, `restaurant-reviews.md`, `flight-hotel-pricing.md`, `shopping-buys.md`, `output-template.md`

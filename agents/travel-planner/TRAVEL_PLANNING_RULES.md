@@ -40,13 +40,24 @@ Binding rules for the TravelPlanner agent. Prefer these over generic chat habits
 
 ## Trip isolation
 
-1. Each trip lives under `trips/<trip-name>/` with its own details, itinerary, budget, bookings, checklist, and sources.
+1. Each trip lives under `trips/<trip-name>/` with its own details, itinerary, budget, bookings, checklist, sources, and (after lock) `MASTER-PLAN.md`.
 2. Do not mix facts across trips. Outputs meant for sharing go under `outputs/` with the trip name in the filename.
-3. Follow `WORKFLOW.md` steps 1–8 unless the user explicitly asks for a narrower task.
+3. Follow `WORKFLOW.md` steps 1–9 unless the user explicitly asks for a narrower task.
+
+## MASTER-PLAN (canonical after lock)
+
+1. After the user locks trip decisions, write `trips/<trip-name>/MASTER-PLAN.md` using `templates/master-plan.md`. That file is the canonical locked plan.
+2. Include **Flights** with three positions (best/optimal, cheap, avoid/trap) and **Hotels** with approx pricing per base. Use **trvl** when available. See `flight-hotel-pricing.md`. Never invent fares or hotel rates; never book. For stay links prefer **Agoda → MakeMyTrip → Booking.com (last resort only)**.
+3. Include **Things to buy (From → To)** for items not available or costly at origin, plus a skip list. See `shopping-buys.md`. Live-search; never invent deals or scam claims.
+4. Do not invent YouTube URLs, review quotes, ratings, or review links — live search only.
+5. Every **named stop** gets one practical YouTube link (prefer **latest** useful upload; **no hard 6–12 month cutoff**; any language) or `YouTube: not found`. See skill reference `youtube-enrichment.md`.
+6. Every **named restaurant** gets short **good** and **caution** takeaways (prefer recent reviews; older OK if nothing newer) or `Reviews: not found`. See skill reference `restaurant-reviews.md`.
+7. When Travel Craft is used, mirror flights/hotels/shopping into validated `trip.json`.
+8. Cite flights, hotels, shopping, videos, and review sources in `sources.md`.
 
 ## Skills & tools
 
 1. Primary planning brain: `travel-agent` skill (7-phase methodology).
-2. Criteria / style helpers: `travel-planner` skill references.
-3. Live search: **trvl** MCP for flights/hotels/ground; **weather** MCP for conditions; Maps only if configured and authenticated.
+2. Criteria / style helpers: `travel-planner` skill references (including YouTube and restaurant-review enrichment).
+3. Live search: **trvl** MCP for flights/hotels/ground; **weather** MCP for conditions; Maps only if configured and authenticated. YouTube and restaurant reviews use web search — no dedicated MCP required.
 4. Cursor commands under `.cursor/commands/` target focused slices (budget, hotels, checklist, etc.).

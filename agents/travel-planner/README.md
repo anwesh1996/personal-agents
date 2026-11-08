@@ -16,9 +16,9 @@ Personal travel planning workspace. Platform-agnostic content lives here; Cursor
 | --- | --- |
 | `TRAVEL_PREFERENCES.md` | Durable traveler profile (read first) |
 | `TRAVEL_PLANNING_RULES.md` | Binding planning rules |
-| `WORKFLOW.md` | Steps 1–8 |
-| `templates/` | trip-request, itinerary, checklist |
-| `trips/` | Per-trip working files |
+| `WORKFLOW.md` | Steps 1–9 (MASTER-PLAN after lock) |
+| `templates/` | trip-request, itinerary, checklist, master-plan |
+| `trips/` | Per-trip working files (`MASTER-PLAN.md` = canonical after lock) |
 | `outputs/` | Shareable exports |
 | `rules/` | Agent rule text (also mirrored for Cursor) |
 

@@ -2,6 +2,10 @@
 description: TravelPlanner agent — preferences, rules, tools, trip isolation
 globs:
   - agents/travel-planner/**
+  - agents/travel-craft/**
+  - apps/travel-craft-web/**
+  - examples/travel-craft/**
+  - packages/travel-craft-schema/**
   - skills/travel-agent/**
   - skills/travel-planner/**
 alwaysApply: false
@@ -24,3 +28,5 @@ Defaults: home Bengaluru, departure BLR, budgets in INR.
 Never invent live prices. Never book/hold/pay without explicit user permission.
 
 Isolate each trip under `agents/travel-planner/trips/<trip-name>/`.
+
+After the user locks requirements, write `MASTER-PLAN.md` as the canonical plan: YouTube for every named stop and recent good/caution reviews for every named restaurant (live search; no invented links or quotes). Stay search links: Agoda first, MakeMyTrip second, Booking.com last resort only.

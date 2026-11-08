@@ -9,4 +9,5 @@ Before planning:
 3. Prefer skills `travel-agent` (primary) and `travel-planner` (criteria/style).
 4. Use MCP tools **trvl** and **weather** for live data when available. Use Google Maps Grounding only if that server is configured and authenticated.
 5. Save trip artifacts under `agents/travel-planner/trips/<trip-name>/`.
-6. Never invent prices. Never book without explicit permission. Currency default: INR. Home/departure default: Bengaluru (BLR).
+6. After the user locks requirements, write `MASTER-PLAN.md` (canonical): YouTube for every named stop and recent good/caution reviews for every named restaurant via live web search — no inventing links or quotes; no dedicated review MCP required.
+7. Never invent prices. Never book without explicit permission. Currency default: INR. Home/departure default: Bengaluru (BLR).

@@ -61,6 +61,7 @@
 | Hotel priority | _[transit / quiet / atmosphere / value — placeholder]_ |
 | Room needs | _[placeholder]_ |
 | Avoid | _[placeholder]_ |
+| Stay search sites (order) | **1. Agoda** · **2. MakeMyTrip** · **3. Booking.com only as last resort** (Booking often shows invalid/unreliable data) |
 
 ## Transport preferences
 

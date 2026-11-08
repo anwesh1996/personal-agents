@@ -121,7 +121,22 @@ Include as relevant:
 
 Call out any assumptions clearly. If something depends on a user choice, show concise options. Use the structure in [output-template.md](references/output-template.md) unless the user asks for a different format.
 
-### 6. Run a quick plan review before Wanderlog
+### 6. Write MASTER-PLAN after the user locks decisions
+
+For file-based trips in this workspace, do **not** write `MASTER-PLAN.md` until the user confirms locked decisions.
+
+When locked:
+
+1. Create or update `agents/travel-planner/trips/<trip-name>/MASTER-PLAN.md` using `agents/travel-planner/templates/master-plan.md`. This file is the **canonical** locked plan.
+2. Include **Flights** with three positioned options (**best/optimal**, **cheap**, **avoid/trap**) and a planning-lock price band, plus **Hotels** with approx nightly/stay totals per base — follow [flight-hotel-pricing.md](references/flight-hotel-pricing.md). Use **trvl** when available; never invent fares/rates; never book. Stay links: **Agoda → MakeMyTrip → Booking.com (last resort only)**.
+3. Include **Things to buy (From → To)** — items not available or costly at origin, plus skips — per [shopping-buys.md](references/shopping-buys.md).
+4. For every **named stop**, add one YouTube link per [youtube-enrichment.md](references/youtube-enrichment.md) (prefer the **latest** useful practical guide; **no hard 6–12 month cutoff**; any language), or `YouTube: not found`.
+5. For every **named restaurant**, add good + caution review takeaways per [restaurant-reviews.md](references/restaurant-reviews.md) (prefer recent; older OK if nothing newer), or `Reviews: not found`.
+6. When Travel Craft JSON is in use, mirror flights, hotels, and shopping into `trip.json` (`travel-craft.trip.v1`).
+7. Live-search only — never invent video URLs, review quotes, ratings, review links, flight fares, hotel rates, or shopping “deals.” Maps Grounding is optional if configured.
+8. Cite flights, hotels, shopping, videos, and review sources in the trip's `sources.md`.
+
+### 7. Run a quick plan review before Wanderlog
 
 Before writing the plan into Wanderlog, do a fast self-check:
 
@@ -133,10 +148,14 @@ Before writing the plan into Wanderlog, do a fast self-check:
 - any meal gaps or awkward meal placement?
 - any restaurant anchors missing cost or reservation context?
 - any crowd-sensitive anchors placed at a poor time of day?
+- any named stop missing YouTube / `not found`?
+- any named restaurant missing good + caution reviews / `not found`?
+- MASTER-PLAN missing three flight positions or hotel approx pricing?
+- MASTER-PLAN missing Things to buy (From → To) / skips (or “none material”)?
 
 Fix obvious issues before executing the Wanderlog write.
 
-### 7. Write to Wanderlog after the plan is approved
+### 8. Write to Wanderlog after the plan is approved
 
 If the user wants the plan in Wanderlog, use Wanderlog MCP after presenting the plan in chat. Do not start writing to Wanderlog first unless the user explicitly asked for direct trip creation and the plan is already clear.
 
@@ -231,9 +250,15 @@ A strong trip plan usually includes:
 4. Budget outline
 5. Paid attraction / entrance fee notes
 6. Free vs paid stop guidance
-7. Packing notes
-8. Booking / prep timeline
-9. Optional Wanderlog execution plan
+7. Flights — best / cheap / avoid with party price bands
+8. Hotels — per-base approx pricing
+9. Things to buy (From → To) + skips
+10. YouTube links for named stops
+11. Recent good / caution reviews for named restaurants
+12. Packing notes
+13. Booking / prep timeline
+14. Locked `MASTER-PLAN.md` + `trip.json` when using Travel Craft
+15. Optional Wanderlog execution plan
 
 ## References
 
@@ -244,3 +269,7 @@ Read these only as needed:
 - [wanderlog-workflow.md](references/wanderlog-workflow.md): tool-by-tool workflow for turning a plan into Wanderlog updates
 - [itinerary-style.md](references/itinerary-style.md): day structure, pacing rules, note-writing standards, and weather / meal logic
 - [output-template.md](references/output-template.md): reusable response template for presenting a complete trip before Wanderlog execution
+- [youtube-enrichment.md](references/youtube-enrichment.md): YouTube selection rules for every named stop in MASTER-PLAN
+- [restaurant-reviews.md](references/restaurant-reviews.md): recent good / caution review rules for every named restaurant
+- [flight-hotel-pricing.md](references/flight-hotel-pricing.md): three-position flights + hotel approx pricing for MASTER-PLAN and trip.json
+- [shopping-buys.md](references/shopping-buys.md): From→To things to buy (unavailable/costly at origin) + skips

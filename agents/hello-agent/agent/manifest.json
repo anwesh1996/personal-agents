@@ -1,0 +1,11 @@
+{
+  "id": "hello-agent",
+  "name": "Hello Agent",
+  "version": "0.1.0",
+  "description": "Minimal headless sample agent with a different output contract, proving multi-agent registry extensibility.",
+  "capabilities": ["echo"],
+  "inputSchema": "hello.input.v1",
+  "outputSchema": "hello.output.v1",
+  "outputType": "hello/message",
+  "supportedPlatforms": ["generic", "cursor"]
+}
