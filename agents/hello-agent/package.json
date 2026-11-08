@@ -1,0 +1,19 @@
+{
+  "name": "@personal-agents/hello-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test tests/manifest.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "node -e \"console.log('hello-agent: manifest-only package')\""
+  },
+  "dependencies": {
+    "@personal-agents/agent-contracts": "workspace:*",
+    "@personal-agents/agent-registry": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "personal-agents",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Multi-agent workspace — Travel Craft first product agent",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
+    "validate:sri-lanka": "pnpm --filter @personal-agents/travel-craft-schema test",
+    "dev:travel-craft": "pnpm --filter @personal-agents/travel-craft-web dev"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

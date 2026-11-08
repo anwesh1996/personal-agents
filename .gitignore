@@ -1,0 +1,36 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+**/secrets/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+!.cursor/
+
+# Node / Python noise
+node_modules/
+dist/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.venv/
+venv/
+apps/*/dist/
+packages/*/dist/
+
+# Eval clones and large binaries (install via scripts)
+.tmp-eval/
+tools/bin/*.exe
+tools/bin/trvl
+tools/bin/CHANGELOG.md
+
+# Trip working drafts with personal PII (keep structure; ignore filled bookings if desired)
+agents/*/trips/**/bookings.local.md
+agents/*/outputs/**/*.pdf

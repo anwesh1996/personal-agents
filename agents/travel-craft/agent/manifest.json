@@ -1,0 +1,24 @@
+{
+  "id": "travel-craft",
+  "name": "Travel Craft",
+  "version": "0.1.0",
+  "description": "AI-first travel planning agent that produces validated trip JSON for Travel Craft UI and static sharing.",
+  "capabilities": [
+    "plan-trip",
+    "research-destination",
+    "optimize-itinerary",
+    "compare-hotels",
+    "recalculate-budget",
+    "publish-trip"
+  ],
+  "inputSchema": "travel-craft.trip-request.v1",
+  "outputSchema": "travel-craft.trip.v1",
+  "outputType": "travel-craft/trip",
+  "ui": {
+    "application": "travel-craft-web",
+    "renderer": "trip-json",
+    "route": "/"
+  },
+  "supportedPlatforms": ["cursor", "generic", "claude-code"],
+  "requiredTools": ["trvl", "weather"]
+}

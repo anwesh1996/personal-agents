@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "trvl": {
+      "command": "C:\\Users\\anwes\\AppData\\Local\\trvl\\trvl.exe",
+      "args": ["mcp"],
+      "env": {
+        "TRVL_NO_TELEMETRY": "1",
+        "NO_TELEMETRY": "1"
+      }
+    },
+    "weather": {
+      "command": "node",
+      "args": ["tools/weather-mcp/start.mjs"],
+      "env": {
+        "WEATHER_UNITS": "metric"
+      }
+    }
+  }
+}
